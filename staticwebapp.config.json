@@ -1,5 +1,10 @@
 {
     "navigationFallback": {
         "rewrite": "/index.html"
+    },
+    "headers": {
+    "Cache-Control": "public, max-age=604800, immutable",
+    "feature-policy": "camera 'none'; geolocation 'none'; microphone 'none'; payment 'none'"
+    
     }
 }
