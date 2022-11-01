@@ -3,8 +3,12 @@
         "rewrite": "/index.html"
     },
     "globalHeaders": {
-       "Cache-Control": "public, max-age=604800, immutable",
+       "expect-ct": "enforce, max-age=300",
        "feature-policy": "camera 'none'; geolocation 'none'; microphone 'none'; payment 'none'",
-       "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'"
+       "Permissions-Policy": "accelerometer=(); camera=(); geolocation=(); gyroscope=(); magnetometer=(); microphone=(); payment=(); usb=()",
+       "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'",
+       "strict-transport-security": "max-age=31536000;includeSubDomains;preload",
+       "x-frame-options": "SAMEORIGIN",
+       "x-robots-tag ": "noindex, nofollow, noimageindex, noarchive, nocache, nosnippet, noyaca"
     }
 }
